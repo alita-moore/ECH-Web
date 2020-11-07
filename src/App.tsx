@@ -8,7 +8,7 @@ import "./css/App.css";
 import Navigation from "./navigation";
 
 let store = createStore(reducers);
-let history = createBrowserHistory();
+let history = createBrowserHistory({});
 
 const App = () => {
 	return (

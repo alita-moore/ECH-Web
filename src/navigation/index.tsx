@@ -1,27 +1,28 @@
 import { createBrowserHistory, History } from "history";
 import React from "react";
-import { Router, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import NavigationBanner from "../components/NavigationBanner";
+
+import Home from "../screens/Home";
+import FeeMarket from "../screens/FeeMarket";
 
 type Props = {
-	history: History | null;
-};
-
-const TestComponent = () => {
-	return (
-		<div>
-			<span>THIS IS A TEST YO</span>
-		</div>
-	);
+	history: History | undefined;
 };
 
 const Navigation = ({ history }: Props) => {
-	const search = window.location.search;
-	const params = new URLSearchParams(search);
 	return (
-		<Router history={history || createBrowserHistory({})}>
-			<Route exact path="/" component={TestComponent} />
-			<Route exact path="/test" component={TestComponent} />
-		</Router>
+		<div>
+			<BrowserRouter>
+				<div>
+					<NavigationBanner />
+					<Switch>
+						<Route path="/fee-market" component={FeeMarket} exact />
+						<Route path="/" component={Home} />
+					</Switch>
+				</div>
+			</BrowserRouter>
+		</div>
 	);
 };
 
