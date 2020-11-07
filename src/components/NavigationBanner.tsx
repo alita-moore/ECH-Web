@@ -3,7 +3,7 @@ import TextLink from "./TextLink";
 
 const Banner = () => {
 	return (
-		<div style={{ display: "flex" }}>
+		<div style={{ display: "flex", flexDirection: "row" }}>
 			<TextLink route={routes.HOME} text={"home"} />
 			<div style={{ width: 50 }} />
 			<TextLink route={routes.FEE_MARKET} text={"fee market"} />
