@@ -1,0 +1,15 @@
+{
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      ".history": true
+    },
+    "explorerExclude.backup": null,
+    "python.formatting.autopep8Args": ["--indent-size=2", "--ignore E121"],
+    "editor.detectIndentation": false,
+    "editor.tabSize": 2
+  }
+  
