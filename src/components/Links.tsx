@@ -1,6 +1,6 @@
 import React, { CSSProperties } from "react";
 import { Link } from "react-router-dom";
-import systemColors from "../design/SystemColors";
+import { Text } from "../design";
 
 type TextProps = {
 	route: string;
@@ -13,19 +13,17 @@ const TextLink = ({ route, text }: TextProps) => (
 	</Link>
 );
 
-export const HeaderLink = ({ route, text }: TextProps) => (
+const HeaderLink = ({ route, text }: TextProps) => (
 	<Link to={route} style={styles.headerLink}>
 		<span>{text}</span>
 	</Link>
 );
 
-export default TextLink;
+export { TextLink, HeaderLink };
 
 const styles = {
 	headerLink: {
-		color: systemColors.blueSoft,
 		textDecoration: "none",
-		fontWeight: 700,
-		fontSize: 20,
+		...Text.HEADER,
 	} as CSSProperties,
 };
