@@ -7,10 +7,6 @@ import Home from "../screens/Home";
 import FeeMarket from "../screens/FeeMarket";
 import { routes } from "../utils";
 
-type Props = {
-	history: History | undefined;
-};
-
 const Navigation = () => {
 	return (
 		<div>

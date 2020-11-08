@@ -1,5 +1,5 @@
 import { routes } from "../../utils";
-import { MenuItems } from "../Dropdown";
+import { MenuItems } from "../HomebrewDropdown";
 
 export const Notes: MenuItems = [
 	{

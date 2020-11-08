@@ -22,7 +22,7 @@ export type DropdownProps = {
 	route?: Route;
 };
 
-const CustomDropdown = ({
+const HomebrewDropdown = ({
 	title,
 	options,
 	type = "header",
@@ -44,7 +44,7 @@ const CustomDropdown = ({
 	);
 };
 
-export default CustomDropdown;
+export default HomebrewDropdown;
 
 const styles = {
 	header: {

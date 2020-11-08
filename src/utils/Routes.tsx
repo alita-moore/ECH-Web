@@ -17,7 +17,7 @@ export const routes = {
 	},
 	NOTES_HOME: { to: "/notes", type: "internal" } as Route,
 	NOTES: {
-		FEE_MARKET: { to: "/fee-market/notes", type: "internal" } as Route,
+		FEE_MARKET: { to: "/notes/fee-market", type: "internal" } as Route,
 	},
 	NETWORK_UPGRADES_HOME: { to: "/upgrades", type: "internal" } as Route,
 	NETWORK_UPGRADES: {
