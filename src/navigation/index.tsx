@@ -5,6 +5,7 @@ import NavigationBanner from "../components/NavigationBanner";
 
 import Home from "../screens/Home";
 import FeeMarket from "../screens/FeeMarket";
+import { routes } from "../utils";
 
 type Props = {
 	history: History | undefined;
@@ -17,7 +18,11 @@ const Navigation = () => {
 				<div>
 					<NavigationBanner />
 					<Switch>
-						<Route path="/fee-market" component={FeeMarket} exact />
+						<Route
+							path={routes.EIP.FEE_MARKET.to}
+							component={FeeMarket}
+							exact
+						/>
 						<Route path="/" component={Home} />
 					</Switch>
 				</div>

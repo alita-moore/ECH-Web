@@ -1,13 +1,8 @@
-export const routes = {
-	HOME: "/",
-	FEE_MARKET: "/fee-market",
-	PEEP: "/peep",
-	NETWORK_UPGRADES_HOME: "/upgrades",
-	GET_INVOLVED: "/get-involved",
-	NOTES: {
-		FEE_MARKET: "/fee-market/notes",
-	},
-	NETWORK_UPGRADES: {
-		BERLIN: "/upgrades/berlin",
-	},
-};
+import { routes } from "./Routes";
+import { HeaderLink, TextLink, createLink } from "./Links";
+
+export { routes, HeaderLink, TextLink, createLink };
+
+// TYPES
+
+export type { Route } from "./Routes";

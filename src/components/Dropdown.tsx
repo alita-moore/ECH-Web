@@ -3,14 +3,8 @@ import { Menu, Dropdown } from "antd";
 import "antd/dist/antd.css";
 import { DownOutlined } from "@ant-design/icons";
 import { Text } from "../design";
-import { Link } from "react-router-dom";
-
-type RouteType = "internal" | "external";
-
-type Route = {
-	to: string;
-	type: RouteType;
-};
+import { createLink } from "../utils";
+import { Route } from "../utils";
 
 type MenuItem = {
 	route: Route;
@@ -29,43 +23,36 @@ export type DropdownProps = {
 	route?: Route;
 };
 
-const _Dropdown = ({ title, options, type = "header" }: DropdownProps) => {
-	const createLink = ({ to, type }: Route, label: string) => {
-		if (type === "internal") {
-			return <Link to={to}>{label}</Link>;
-		} else if (type === "external") {
-			return (
-				<a target="_blank" rel="noopener noreferrer" href={to}>
-					{label}
-				</a>
-			);
-		}
-	};
-
+const CustomDropdown = ({
+	title,
+	options,
+	type = "header",
+	route,
+}: DropdownProps) => {
 	const createMenuItem = ({ route, label, disabled }: MenuItem) => (
-		<Menu.Item>{createLink(route, label)}</Menu.Item>
+		<Menu.Item>{createLink(label, route)}</Menu.Item>
 	);
 
 	const menu = <Menu>{options.map(createMenuItem)}</Menu>;
 
 	return (
 		<Dropdown overlay={menu}>
-			<div
-				className="ant-dropdown-link"
-				onClick={(e) => e.preventDefault()}
-				style={styles[type]}
-			>
-				{title} <DownOutlined />
+			<div className="ant-dropdown-link" style={styles[type]}>
+				{route ? createLink(title, route, styles.headerLink) : title}{" "}
+				<DownOutlined />
 			</div>
 		</Dropdown>
 	);
 };
 
-export default _Dropdown;
+export default CustomDropdown;
 
 const styles = {
 	header: {
 		cursor: "pointer",
 		...Text.HEADER,
+	} as CSSProperties,
+	headerLink: {
+		...Text.HEADER_LINK,
 	} as CSSProperties,
 };

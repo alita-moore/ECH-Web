@@ -11,6 +11,9 @@ const Text = {
 		fontWeight: 500,
 		fontSize: 20,
 	} as CSSProperties,
+	HEADER_LINK: {
+		color: SystemColors.lightBlack,
+	} as CSSProperties,
 };
 
 export { Text, SystemColors };
