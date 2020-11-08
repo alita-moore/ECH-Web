@@ -9,7 +9,6 @@ import { Route } from "../utils";
 type MenuItem = {
 	route: Route;
 	label: string;
-	disabled?: boolean;
 };
 
 export type MenuItems = MenuItem[];
@@ -29,7 +28,7 @@ const CustomDropdown = ({
 	type = "header",
 	route,
 }: DropdownProps) => {
-	const createMenuItem = ({ route, label, disabled }: MenuItem) => (
+	const createMenuItem = ({ route, label }: MenuItem) => (
 		<Menu.Item>{createLink(label, route)}</Menu.Item>
 	);
 
