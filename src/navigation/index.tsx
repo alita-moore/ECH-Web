@@ -1,4 +1,4 @@
-import { createBrowserHistory, History } from "history";
+import { History } from "history";
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import NavigationBanner from "../components/NavigationBanner";
@@ -10,7 +10,7 @@ type Props = {
 	history: History | undefined;
 };
 
-const Navigation = ({ history }: Props) => {
+const Navigation = () => {
 	return (
 		<div>
 			<BrowserRouter>
