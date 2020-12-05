@@ -1,5 +1,7 @@
 The Ethereum Cat Herder's Website
 
+This site uses Gatsby
+
 ## Quick Start
 ### Requirements
 - git
