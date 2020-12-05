@@ -1,12 +1,12 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("/home/alita/ethereum/test/my-gatsby-site/node_modules/lodash/merge.js"), require("react"), require("react-dom/server"));
+		module.exports = factory(require("/home/alita/ethereum/ech-web/node_modules/lodash/merge.js"), require("react"), require("react-dom/server"));
 	else if(typeof define === 'function' && define.amd)
-		define("lib", ["/home/alita/ethereum/test/my-gatsby-site/node_modules/lodash/merge.js", "react", "react-dom/server"], factory);
+		define("lib", ["/home/alita/ethereum/ech-web/node_modules/lodash/merge.js", "react", "react-dom/server"], factory);
 	else if(typeof exports === 'object')
-		exports["lib"] = factory(require("/home/alita/ethereum/test/my-gatsby-site/node_modules/lodash/merge.js"), require("react"), require("react-dom/server"));
+		exports["lib"] = factory(require("/home/alita/ethereum/ech-web/node_modules/lodash/merge.js"), require("react"), require("react-dom/server"));
 	else
-		root["lib"] = factory(root["/home/alita/ethereum/test/my-gatsby-site/node_modules/lodash/merge.js"], root["react"], root["react-dom/server"]);
+		root["lib"] = factory(root["/home/alita/ethereum/ech-web/node_modules/lodash/merge.js"], root["react"], root["react-dom/server"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE_lodash_merge__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -4418,9 +4418,9 @@ function v(){return(v=Object.assign||function(e){for(var t=1;t<arguments.length;
 /***/ }),
 
 /***/ "lodash/merge":
-/*!****************************************************************************************!*\
-  !*** external "/home/alita/ethereum/test/my-gatsby-site/node_modules/lodash/merge.js" ***!
-  \****************************************************************************************/
+/*!****************************************************************************!*\
+  !*** external "/home/alita/ethereum/ech-web/node_modules/lodash/merge.js" ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 

@@ -5,7 +5,11 @@
   "description": "Ethereum Cat Herders, for everything core dev",
   "author": "alita-moore",
   "keywords": [
-    "gatsby", "ECH", "Ethereum Cat Herders", "Ethereum Core Devs", "Peep an EIP"
+    "gatsby",
+    "ECH",
+    "Ethereum Cat Herders",
+    "Ethereum Core Devs",
+    "Peep an EIP"
   ],
   "scripts": {
     "develop": "gatsby develop",
