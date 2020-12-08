@@ -3,7 +3,7 @@ import { Provider } from "react-redux";
 import reducers from "./redux/reducers";
 import React from "react";
 import "./css/App.css";
-import Navigation from "./navigation";
+import Navigation from "./components/Navigation";
 
 let store = createStore(reducers);
 

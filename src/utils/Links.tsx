@@ -1,5 +1,5 @@
 import React, { CSSProperties } from "react";
-import { Link } from "react-router-dom";
+import Link from "gatsby-link";
 import { Text } from "../design";
 import { Route } from ".";
 
@@ -9,7 +9,7 @@ type TextProps = {
 };
 
 export const TextLink = ({ route, text }: TextProps) => (
-	<Link to={route}>
+	<Link to={route.to}>
 		<span>{text}</span>
 	</Link>
 );
