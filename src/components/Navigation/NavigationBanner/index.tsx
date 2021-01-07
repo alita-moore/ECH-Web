@@ -1,9 +1,9 @@
 import React, { CSSProperties } from "react";
-import logo from "../../assets/avatar-icon.png";
+import logo from "app/assets/avatar-icon.png";
 import Link from "gatsby-link";
-import { HeaderLink } from "../../../utils/Links";
-import { routes } from "../../../utils";
-import HomebrewDropdown from "../../HomebrewDropdown";
+import { HeaderLink } from "app/services/utils/Links";
+import { routes } from "app/services/utils";
+import HomebrewDropdown from "app/components/HomebrewDropdown";
 import { Notes, EIPs, Initiatives, NetworkUpgrades } from "./HeaderMenus";
 
 const Banner = () => {

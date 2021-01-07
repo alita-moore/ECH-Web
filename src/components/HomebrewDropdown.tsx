@@ -3,8 +3,8 @@ import { Menu, Dropdown } from "antd";
 import "antd/dist/antd.css";
 import { DownOutlined } from "@ant-design/icons";
 import { Text } from "../design";
-import { createLink } from "../utils";
-import { Route } from "../utils";
+import { createLink } from "../services/utils";
+import { Route } from "../services/utils";
 
 type MenuItem = {
 	route: Route;

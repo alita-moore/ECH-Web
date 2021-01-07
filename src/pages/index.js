@@ -1,6 +1,6 @@
 import React from "react";
-import "../css/index.css";
-import App from "../App";
+import "app/css/index.css";
+import App from "app/App";
 
 const IndexPage = () => (
   <React.StrictMode>

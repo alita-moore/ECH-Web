@@ -1,6 +1,6 @@
 import React, { CSSProperties } from "react";
 import Link from "gatsby-link";
-import { Text } from "../design";
+import { Text } from "app/design";
 import { Route } from ".";
 
 type TextProps = {
