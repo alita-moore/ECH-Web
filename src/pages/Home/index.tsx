@@ -1,5 +1,5 @@
 import React, { CSSProperties } from "react";
-import avatar from "../assets/avatar-icon.png";
+import avatar from "app/assets/avatar-icon.png";
 
 const Home = () => {
 	return (
