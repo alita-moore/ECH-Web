@@ -11,5 +11,5 @@ This site uses Gatsby
 Download the code via ```git clone```
 ```bash
 npm install
-npm start
+npm run start
 ```
